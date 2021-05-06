@@ -1,0 +1,9 @@
+# Using the data from part one, write a program that will calculate what percentage of the DNA sequence is coding.
+
+dna_seq = "ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT"
+first_exon = dna_seq[0:62]
+second_exon = dna_seq[90:]
+coding_sequence = first_exon + second_exon
+len_coding_sequence = len(coding_sequence)
+len_total = len(dna_seq)
+dna_percentage = (len_coding_sequence / len_total)*100
