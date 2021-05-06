@@ -1,0 +1,8 @@
+# Using the data from part one, write a program that will print out the original genomic DNA sequence with coding bases in uppercase and non-coding bases in lowercase. 
+
+dna_seq = "ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT"
+first_exon = dna_seq[0:62]
+intron = dna_seq[62:90]
+second_exon = dna_seq[90:]
+original_seq = first_exon + intron.lower() + second_exon
+print(original_seq)
