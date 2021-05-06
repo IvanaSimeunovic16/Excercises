@@ -1,0 +1,18 @@
+# Write a program that will create a FASTA file for the following three sequences – make sure that all sequences are in upper case and only contain the bases A, T, G and C.
+Sequences are:
+ABC123 ATCGTACGATCGATCGATCGCTAGACGTATCG
+DEF456 actgatcgacgatcgatcgatcacgact
+HIJ789 ACTGAC-ACTGT--ACTGTA----CATGTG
+
+a = ">ABC123 \nATCGTACGATCGATCGATCGCTAGACGTATCG"
+b = ">DEF456 \nactgatcgacgatcgatcgatcacgact"
+c = ">HIJ789 \nACTGAC-ACTGT--ACTGTA----CATGTG"
+
+fasta_file = open("fasta.txt", "a")
+fasta_file.write(a)
+fasta_file.write("\n")
+fasta_file.write(b.upper())
+fasta_file.write("\n")
+fasta_file.write(c.replace("-", ""))
+
+fasta_file.close()
