@@ -1,0 +1,16 @@
+# Look in the chapter_3 folder for a file called genomic_dna.txt – it contains the same piece of genomic DNA that we were using in the final exercise from chapter 2. Write
+a program that will split the genomic DNA into coding and non-coding parts, andwrite these sequences to two separate files.
+
+my_file = open("C:\\exercises\\reading_files\\exercises\\genomic_dna.txt)
+my_file_contents = my_file.read()
+dna = my_file_contents.rstrip("\n")
+
+first_exon = dna_seq[0:62]
+intron = dna_seq[62:90]
+second_exon = dna_seq[90:]
+
+coding = open("coding_dna.txt", "w")
+coding.write(first_exon + second_exon)
+
+noncoding = open("noncoding_dna.txt", "w")
+noncoding.write(intron)
