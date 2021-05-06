@@ -1,0 +1,7 @@
+dna = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+
+a_count = dna.count('A')
+t_count = dna.count('T')
+
+len_dna = len(dna)
+at_content = ((a_count + t_count)/len_dna)*100
