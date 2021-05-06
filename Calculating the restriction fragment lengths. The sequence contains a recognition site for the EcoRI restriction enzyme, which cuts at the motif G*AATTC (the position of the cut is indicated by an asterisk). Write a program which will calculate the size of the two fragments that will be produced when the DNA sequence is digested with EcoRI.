@@ -1,0 +1,3 @@
+dna = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+len_fragment1 = dna.find("GAATTC") + 1
+len_fragment2 = len(dna) - len_fragment1
