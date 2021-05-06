@@ -1,0 +1,8 @@
+#The first exon runs from the start of the sequence to the sixty-third character, and the second exon runs from the ninetyfirst character to the end of the sequence. Write a program that will print just the
+coding regions of the DNA sequence. 
+
+dna_seq = 'ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT'
+first_exon = dna_seq[0:62]
+second_exon = dna_seq[90:]
+coding_sequence = first_exon + second_exon
+print(coding_sequence)
