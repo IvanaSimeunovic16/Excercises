@@ -1,0 +1,51 @@
+# 1.  BRAC2 mRNA: Visit the Web page
+#  http://www.ncbi.nlm.nih.gov/nuccore/224004157?report=genbank
+#  containing a partial coding mRNA sequence of the breast cancer gene BRAC2. You can read more about this gene at https://ghr.nlm.nih.gov/gene/BRCA2
+#  Observe that the first 60 nucleotides of this gene are:
+#  gggtgcgacg attcattgtt ttcggacaag tggataggca accactaccg gtggattgtc
+#  Create a Python program that stores this sequence without the blank spaces in a string and prints out the string in lower case and also in upper case letters.
+
+BRAC2_gene_first_nucleotides = "gggtgcgacg attcattgtt ttcggacaag tggataggca accactaccg gtggattgtc"
+
+BRAC2 = BRAC2_gene_first_nucleotides.replace(" ", "")
+print(BRAC2.upper())
+
+# 2. List of codons for acidic acids: Create a list variable that holds the DNA codons for Glutamic acid. Next, add to this list the DNA codons that code for Aspartic acid.
+#    Your new list now should hold all the DNA codons for acidic acids. 
+#    Print the codons for acidic acids, one per line. You will need to look up the necessary codons in a DNA codon table.
+
+codons = ['CAA', 'CAG']
+codons.append('GAU')
+codons.append('GAC')
+print(codons)
+
+# 3. Sorting a list of strings: Sorting entries of a list is a common task. 
+#    Modify your Python code in the previous problem so that your code prints out the codons sorted lexically.
+
+codons = ['CAA', 'CAG']
+codons.append('GAU')
+codons.append('GAC')
+print(codons)
+sorted_codons = sorted(codons)
+print(sorted_codons)
+
+# 4. Dictionary of codons for acidic acids: Create a dictionary variable using the RNA codons that codes for acidic amino acids from previous assignment as keys and the names of the acidic acids as values: (key, value) are (codon, amino acid). Extract the keys list of your dictionary and print it.
+#    Extract the values list of your dictionary and print it. You will need to look up for the necessary codons in a RNA codon table.
+
+amino = dict()
+amino['CAA'] = 'Glutamine'
+amino['CAG'] = 'Glutamine'
+amino['GAU'] ='Aspartic_acid'
+amino['GAC'] = 'Aspartic_acid'
+print(amino)
+
+values = amino.values()
+values_list = list(values)
+print(values_list)
+
+keys_from_dict = amino.keys()
+list_of_keys = list(keys_from_dict)
+print(list_of_keys)
+
+
+
