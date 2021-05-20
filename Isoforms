@@ -10,3 +10,13 @@ print(len(isoform2))
 
 len_difference = len(isoform1) - len(isoform2)
 print(len_difference)
+
+if "UCAAGACGCUCAACAU" in isoform1:
+    print('There is a motiv in isoform1')
+else:
+    print('No motiv in isoform1')
+
+if "UCAAGACGCUCAACAU" in isoform2:
+    print('There is a motiv in isoform2')
+else:
+    print('No motiv in isoform2')
