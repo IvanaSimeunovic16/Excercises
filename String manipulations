@@ -1,0 +1,48 @@
+# 1. Codons in a list: Create a Python program that stores a 15-base long DNA coding sequence in a string variable and then extracts all 5 codons comprising the DNA sequence and stores them in a list. 
+#    The use of slicing is mandatory. Your program should print the sequence and, on a new line, the codons comprising it, separated by tabs.
+
+sequence = 'gggtgcgacgattca'
+lst = list()
+lst.append(sequence[0:3])
+lst.append(sequence[3:6])
+lst.append(sequence[6:9])
+lst.append(sequence[9:12])
+lst.append(sequence[12:15])
+
+print(sequence)
+print(lst)
+
+# 2. Fore-and-aft: Using slicing, extract and print out the first 3 and the last 3 codons of the BRAC2 gene segment below:
+     gggtgcgacg attcattgtt ttcggacaag tggataggca accactaccg gtggattgtc
+     
+sequence = 'gggtgcgacg attcattgtt ttcggacaag tggataggca accactaccg gtggattgtc'
+first = sequence[0:9]
+print(len(sequence))
+last = sequence[56:]
+first_and_last = first+last
+print(first_and_last)
+
+# 3. Reverse complement: Create a Python program that computes the reverse complement of the DNA sequence below and prints the sequence and its reverse complement.
+
+sequence = 'GACGTCGCCAGAGAggcataTAACGATAtgacacagagagagcaGAGACAAGT'
+reverse = sequence[::-1]
+
+print(sequence)
+print(reverse)
+
+# 4. Modifying strings: In the Python programming language, string variables are immutable (cannot be changed) but list variables are mutable. 
+#    However, it is possible to convert a string to a list, modify the list, and convert the modified list back to a string. 
+#    Write a Python code that takes the string
+#    BRAC2_seq = "gggtgcgacgattcattgttttcggacaag"
+#    and causes two mutations: replace the 4th "g" with an "a" and delete the 4th "t".
+
+BRAC2_seq = "gggtgcgacgattcattgttttcggacaag"
+lst = list(BRAC2_seq)
+print(lst)
+lst[4] = 'a'
+lst.pop(3)
+
+print(lst)
+string_from_list = ''.join(lst)
+print(string_from_list)
+
