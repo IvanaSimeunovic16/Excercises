@@ -1,0 +1,49 @@
+# 1. Check a sequence to see if the first codon is start codon:
+
+seq = 'ATGCACAGTAGT'
+codon1 = seq[0:3]
+
+if codon1 == 'ATG':
+  print('This is a start codon')
+else: 
+  print('This is not a start codon')
+  
+print('Done!')
+
+# 2. Is the last codon start or stop codon?
+
+seq = 'ATGCACAGTAGTCGAGATT'
+last_codon = seq[-3:0]
+
+if codon1 == 'ATG':
+  print('This is a start codon')
+elif codon1 == 'TAA' :
+    print('This is a stop codon')
+elif codon1 == 'TAG':
+    print('This is a stop codon')
+elif codon1 == 'TGA':
+  print('This is a stop codon')
+else:
+    print('Codon is neither start or stop codon')
+
+print('Done!')
+
+# 3. Search sequence for valine codon.
+
+seq = 'GTACCCATATGGGTGTGTATTGTGATGGRTGTAGTGTAGTCG'
+
+valine = ['GUU', 'GUC','GUA', 'GUG']
+
+if valine[0] in seq:
+    print('There is GUU valine codon')
+elif valine[1] in seq:
+    print('There is GUC valine codon')
+elif valine[2] in seq:
+    print('There is GUA valine codon')
+elif valine [3] in seq:
+    print('There is GUG valine codon')
+else:
+    print('Valine codon not found')
+
+print('Work is done!')
+
